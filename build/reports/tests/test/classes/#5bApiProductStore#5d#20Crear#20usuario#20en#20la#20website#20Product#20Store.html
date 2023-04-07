@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class [ApiProductStore] Crear usuario en la website Product Store</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class [ApiProductStore] Crear usuario en la website Product Store</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; [ApiProductStore] Crear usuario en la website Product Store</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.223s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">66%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="[1:10] Crear un usuario por medio de la api de  la website Product Store"></a>
+<h3 class="failures">[1:10] Crear un usuario por medio de la api de  la website Product Store</h3>
+<span class="code">
+<pre>com.intuit.karate.KarateException: match failed: CONTAINS
+  $ | data types don't match (MAP:STRING)
+  {&quot;errorMessage&quot;:&quot;This user already exist.&quot;}
+  ''
+
+
+classpath:ApiProductStore.feature:18
+	at &lt;feature&gt;.: And match response contains &quot;&quot; (classpath:ApiProductStore.feature:18:18)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">[1:10] Crear un usuario por medio de la api de  la website Product Store</td>
+<td class="failures">1.333s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">[2:23] Crear un usuario con un username ya registrado</td>
+<td class="success">0.562s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[3:35] Intentar realizar un login con un crdenciales no validas</td>
+<td class="success">0.328s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>19:26:39.109 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+19:26:39.125 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+19:26:39.156 [Test worker] DEBUG karate.io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+19:26:39.156 [Test worker] DEBUG karate.io.netty.util.internal.PlatformDependent - Platform: Windows
+19:26:39.172 [Test worker] DEBUG karate.io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+19:26:39.172 [Test worker] DEBUG karate.io.netty.util.internal.PlatformDependent0 - Java version: 8
+19:26:39.172 [Test worker] DEBUG karate.io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+19:26:39.172 [Test worker] DEBUG karate.io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+19:26:39.172 [Test worker] DEBUG karate.io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+19:26:39.172 [Test worker] DEBUG karate.io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+19:26:39.172 [Test worker] DEBUG karate.io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+19:26:39.172 [Test worker] DEBUG karate.io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+19:26:39.172 [Test worker] DEBUG karate.io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.&lt;init&gt;(long, int): available
+19:26:39.172 [Test worker] DEBUG karate.io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+19:26:39.172 [Test worker] DEBUG karate.io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\ASUS\AppData\Local\Temp (java.io.tmpdir)
+19:26:39.172 [Test worker] DEBUG karate.io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+19:26:39.172 [Test worker] DEBUG karate.io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 477626368 bytes
+19:26:39.172 [Test worker] DEBUG karate.io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+19:26:39.172 [Test worker] DEBUG karate.io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+19:26:39.172 [Test worker] DEBUG karate.io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+19:26:39.503 [Test worker] DEBUG karate.org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+19:26:39.503 [Test worker] DEBUG karate.org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+19:26:39.503 [Test worker] DEBUG com.intuit.karate - request:
+1 &gt; POST https://api.demoblaze.com/signup
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 46
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;password&quot;:&quot;Angulo&quot;,&quot;username&quot;:&quot;Alvaro88470&quot;}
+
+19:26:39.503 [Test worker] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}-&gt;https://api.demoblaze.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+19:26:39.519 [Test worker] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}-&gt;https://api.demoblaze.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+19:26:39.519 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Opening connection {s}-&gt;https://api.demoblaze.com:443
+19:26:39.639 [Test worker] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to api.demoblaze.com/142.250.78.179:443
+19:26:39.639 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to api.demoblaze.com/142.250.78.179:443 with timeout 30000
+19:26:39.676 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.2, TLSv1.1, TLSv1]
+19:26:39.676 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+19:26:39.676 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+19:26:39.977 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+19:26:39.977 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+19:26:39.977 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+19:26:39.977 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=api.demoblaze.com
+19:26:39.977 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [api.demoblaze.com]
+19:26:39.977 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=GTS CA 1D4, O=Google Trust Services LLC, C=US
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.5:51776&lt;-&gt;142.250.78.179:443
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 30000
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Executing request POST /signup HTTP/1.1
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &gt;&gt; POST /signup HTTP/1.1
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &gt;&gt; Accept: application/json
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &gt;&gt; Content-Type: application/json; charset=UTF-8
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &gt;&gt; Content-Length: 46
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &gt;&gt; Host: api.demoblaze.com
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &gt;&gt; Connection: Keep-Alive
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &gt;&gt; Accept-Encoding: gzip,deflate
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;POST /signup HTTP/1.1[\r][\n]&quot;
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Accept: application/json[\r][\n]&quot;
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Content-Type: application/json; charset=UTF-8[\r][\n]&quot;
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Content-Length: 46[\r][\n]&quot;
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Host: api.demoblaze.com[\r][\n]&quot;
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)[\r][\n]&quot;
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;[\r][\n]&quot;
+19:26:39.981 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;{&quot;username&quot;:&quot;Alvaro88470&quot;,&quot;password&quot;:&quot;Angulo&quot;}&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Type: application/json[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Vary: Accept-Encoding[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Encoding: gzip[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;X-Cloud-Trace-Context: 4eba356214379efa28cf596d6ad1e169[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Date: Fri, 07 Apr 2023 00:26:40 GMT[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Server: Google Frontend[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Cache-Control: private[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0x1f][\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0x8b][\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0x8][\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0x0][\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0x0][\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0x0][\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0x0][\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0x0][\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0x0][\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0x3][\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0xaa][\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;V[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;J[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;-[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;*[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0xca][\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;/[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0xf2][\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;M[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;01[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;-[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;32[\r][\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;.NLOU[0xb2]R[\n]&quot;
+19:26:40.232 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0xc9][0xc8],V(-N-RH[0xcc])JML[0xa9]TH[0xad][0xc8],.[0xd1]S[0xaa][0xe5][0x2][0x0][0x0][0x0][0xff][0xff][0x3][0x0]E[0xcb]3[0x94],[0x0][0x0][0x0][\r][\n]&quot;
+19:26:40.239 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; HTTP/1.1 200 OK
+19:26:40.239 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Content-Type: application/json
+19:26:40.239 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Vary: Accept-Encoding
+19:26:40.239 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Content-Encoding: gzip
+19:26:40.239 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; X-Cloud-Trace-Context: 4eba356214379efa28cf596d6ad1e169
+19:26:40.239 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Date: Fri, 07 Apr 2023 00:26:40 GMT
+19:26:40.239 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Server: Google Frontend
+19:26:40.239 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Cache-Control: private
+19:26:40.239 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Transfer-Encoding: chunked
+19:26:40.239 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+19:26:40.247 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 744
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cloud-Trace-Context: 4eba356214379efa28cf596d6ad1e169
+1 &lt; Date: Fri, 07 Apr 2023 00:26:40 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Cache-Control: private
+1 &lt; Transfer-Encoding: chunked
+{&quot;errorMessage&quot;:&quot;This user already exist.&quot;}
+19:26:40.258 [Test worker] ERROR com.intuit.karate - classpath:ApiProductStore.feature:18
+And match response contains &quot;&quot;
+match failed: CONTAINS
+  $ | data types don't match (MAP:STRING)
+  {&quot;errorMessage&quot;:&quot;This user already exist.&quot;}
+  ''
+
+
+classpath:ApiProductStore.feature:18
+19:26:40.263 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+19:26:40.263 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+19:26:40.263 [Test worker] DEBUG karate.org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+19:26:40.263 [Test worker] DEBUG karate.org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+19:26:40.263 [Test worker] DEBUG com.intuit.karate - request:
+1 &gt; POST https://api.demoblaze.com/signup
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 46
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;password&quot;:&quot;Angulo&quot;,&quot;username&quot;:&quot;Alvaro88470&quot;}
+
+19:26:40.263 [Test worker] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}-&gt;https://api.demoblaze.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+19:26:40.263 [Test worker] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {s}-&gt;https://api.demoblaze.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+19:26:40.263 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Opening connection {s}-&gt;https://api.demoblaze.com:443
+19:26:40.263 [Test worker] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to api.demoblaze.com/142.250.78.179:443
+19:26:40.263 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to api.demoblaze.com/142.250.78.179:443 with timeout 30000
+19:26:40.294 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.2, TLSv1.1, TLSv1]
+19:26:40.294 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+19:26:40.294 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=api.demoblaze.com
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [api.demoblaze.com]
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=GTS CA 1D4, O=Google Trust Services LLC, C=US
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.5:51778&lt;-&gt;142.250.78.179:443
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 30000
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Executing request POST /signup HTTP/1.1
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-1 &gt;&gt; POST /signup HTTP/1.1
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-1 &gt;&gt; Accept: application/json
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-1 &gt;&gt; Content-Type: application/json; charset=UTF-8
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-1 &gt;&gt; Content-Length: 46
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-1 &gt;&gt; Host: api.demoblaze.com
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-1 &gt;&gt; Connection: Keep-Alive
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-1 &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-1 &gt;&gt; Accept-Encoding: gzip,deflate
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;POST /signup HTTP/1.1[\r][\n]&quot;
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Accept: application/json[\r][\n]&quot;
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Content-Type: application/json; charset=UTF-8[\r][\n]&quot;
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Content-Length: 46[\r][\n]&quot;
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Host: api.demoblaze.com[\r][\n]&quot;
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)[\r][\n]&quot;
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;[\r][\n]&quot;
+19:26:40.648 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;{&quot;username&quot;:&quot;Alvaro88470&quot;,&quot;password&quot;:&quot;Angulo&quot;}&quot;
+19:26:40.800 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+19:26:40.800 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Content-Type: application/json[\r][\n]&quot;
+19:26:40.800 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Vary: Accept-Encoding[\r][\n]&quot;
+19:26:40.800 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Content-Encoding: gzip[\r][\n]&quot;
+19:26:40.800 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Cloud-Trace-Context: 8c2624c9dff448c0186512fc5e7d4b17[\r][\n]&quot;
+19:26:40.800 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Date: Fri, 07 Apr 2023 00:26:41 GMT[\r][\n]&quot;
+19:26:40.800 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Server: Google Frontend[\r][\n]&quot;
+19:26:40.800 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Cache-Control: private[\r][\n]&quot;
+19:26:40.800 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[0x1f][\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[0x8b][\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[0x8][\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[0x0][\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[0x0][\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[0x0][\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[0x0][\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[0x0][\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[0x0][\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[0x3][\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[0xaa][\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;V[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;J[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;00000001[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;-[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;000038[\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;*[0xca]/[0xf2]M-.NLOU[0xb2]R[\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[0xc9][0xc8],V(-N-RH[0xcc])JML[0xa9]TH[0xad][0xc8],.[0xd1]S[0xaa][0xe5][0x2][0x0][0x0][0x0][0xff][0xff][0x3][0x0]E[0xcb]3[0x94],[0x0][0x0][0x0][\r][\n]&quot;
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-1 &lt;&lt; HTTP/1.1 200 OK
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-1 &lt;&lt; Content-Type: application/json
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-1 &lt;&lt; Vary: Accept-Encoding
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-1 &lt;&lt; Content-Encoding: gzip
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-1 &lt;&lt; X-Cloud-Trace-Context: 8c2624c9dff448c0186512fc5e7d4b17
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-1 &lt;&lt; Date: Fri, 07 Apr 2023 00:26:41 GMT
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-1 &lt;&lt; Server: Google Frontend
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-1 &lt;&lt; Cache-Control: private
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-1 &lt;&lt; Transfer-Encoding: chunked
+19:26:40.815 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+19:26:40.815 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 552
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cloud-Trace-Context: 8c2624c9dff448c0186512fc5e7d4b17
+1 &lt; Date: Fri, 07 Apr 2023 00:26:41 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Cache-Control: private
+1 &lt; Transfer-Encoding: chunked
+{&quot;errorMessage&quot;:&quot;This user already exist.&quot;}
+19:26:40.815 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+19:26:40.831 [Test worker] INFO com.intuit.karate - [print] {
+  &quot;errorMessage&quot;: &quot;This user already exist.&quot;
+}
+ 
+19:26:40.831 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+19:26:40.831 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+19:26:40.846 [Test worker] DEBUG karate.org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+19:26:40.846 [Test worker] DEBUG karate.org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+19:26:40.846 [Test worker] DEBUG com.intuit.karate - request:
+1 &gt; POST https://api.demoblaze.com/login
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 46
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;password&quot;:&quot;1q2w3e&quot;,&quot;username&quot;:&quot;testing2892&quot;}
+
+19:26:40.846 [Test worker] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}-&gt;https://api.demoblaze.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+19:26:40.846 [Test worker] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 2][route: {s}-&gt;https://api.demoblaze.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+19:26:40.846 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Opening connection {s}-&gt;https://api.demoblaze.com:443
+19:26:40.846 [Test worker] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to api.demoblaze.com/142.250.78.179:443
+19:26:40.846 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to api.demoblaze.com/142.250.78.179:443 with timeout 30000
+19:26:40.863 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.2, TLSv1.1, TLSv1]
+19:26:40.863 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+19:26:40.863 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+19:26:41.013 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=api.demoblaze.com
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [api.demoblaze.com]
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=GTS CA 1D4, O=Google Trust Services LLC, C=US
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.5:51779&lt;-&gt;142.250.78.179:443
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: set socket timeout to 30000
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Executing request POST /login HTTP/1.1
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-2 &gt;&gt; POST /login HTTP/1.1
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-2 &gt;&gt; Accept: application/json
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-2 &gt;&gt; Content-Type: application/json; charset=UTF-8
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-2 &gt;&gt; Content-Length: 46
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-2 &gt;&gt; Host: api.demoblaze.com
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-2 &gt;&gt; Connection: Keep-Alive
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-2 &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-2 &gt;&gt; Accept-Encoding: gzip,deflate
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;POST /login HTTP/1.1[\r][\n]&quot;
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Accept: application/json[\r][\n]&quot;
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Content-Type: application/json; charset=UTF-8[\r][\n]&quot;
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Content-Length: 46[\r][\n]&quot;
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Host: api.demoblaze.com[\r][\n]&quot;
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)[\r][\n]&quot;
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;[\r][\n]&quot;
+19:26:41.014 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;{&quot;username&quot;:&quot;testing2892&quot;,&quot;password&quot;:&quot;1q2w3e&quot;}&quot;
+19:26:41.158 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+19:26:41.158 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Content-Type: application/json[\r][\n]&quot;
+19:26:41.158 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Vary: Accept-Encoding[\r][\n]&quot;
+19:26:41.158 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Content-Encoding: gzip[\r][\n]&quot;
+19:26:41.158 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;X-Cloud-Trace-Context: b0eb9b3829240a17638f51a47a27e3f8[\r][\n]&quot;
+19:26:41.158 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Date: Fri, 07 Apr 2023 00:26:41 GMT[\r][\n]&quot;
+19:26:41.158 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Server: Google Frontend[\r][\n]&quot;
+19:26:41.158 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Cache-Control: private[\r][\n]&quot;
+19:26:41.163 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+19:26:41.163 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;[\r][\n]&quot;
+19:26:41.163 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;0042[\r][\n]&quot;
+19:26:41.163 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x0][0x0][0x0][0xff][0xff][0xaa]VJ-*[0xca]/[0xf2]M-.NLOU[0xb2]R[\n]&quot;
+19:26:41.163 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;/[0xca][0xcf]KW(H,..[0xcf]/J[0xd1]S[0xaa][0xe5][0x2][0x0][0x0][0x0][0xff][0xff][0x3][0x0])u[0x13][0x97]#[0x0][0x0][0x0][\r][\n]&quot;
+19:26:41.164 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-2 &lt;&lt; HTTP/1.1 200 OK
+19:26:41.164 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-2 &lt;&lt; Content-Type: application/json
+19:26:41.164 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-2 &lt;&lt; Vary: Accept-Encoding
+19:26:41.164 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-2 &lt;&lt; Content-Encoding: gzip
+19:26:41.164 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-2 &lt;&lt; X-Cloud-Trace-Context: b0eb9b3829240a17638f51a47a27e3f8
+19:26:41.164 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-2 &lt;&lt; Date: Fri, 07 Apr 2023 00:26:41 GMT
+19:26:41.164 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-2 &lt;&lt; Server: Google Frontend
+19:26:41.164 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-2 &lt;&lt; Cache-Control: private
+19:26:41.164 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-2 &lt;&lt; Transfer-Encoding: chunked
+19:26:41.164 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+19:26:41.164 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 318
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cloud-Trace-Context: b0eb9b3829240a17638f51a47a27e3f8
+1 &lt; Date: Fri, 07 Apr 2023 00:26:41 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Cache-Control: private
+1 &lt; Transfer-Encoding: chunked
+{&quot;errorMessage&quot;:&quot;Wrong password.&quot;}
+19:26:41.164 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+19:26:41.164 [Test worker] INFO com.intuit.karate - [print] {
+  &quot;errorMessage&quot;: &quot;Wrong password.&quot;
+}
+ 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at 6/04/2023 07:26:42 PM</p>
+</div>
+</div>
+</body>
+</html>
